@@ -10,6 +10,7 @@ var full_scale_penta = [];
 var old_position = Vector2(0,0)
 var current_position_in_scale = Vector2(0,0)
 var current_midi_note = Vector2(0,0)
+var old_midi_note = Vector2(0,0)
 
 
 # Called when the node enters the scene tree for the first time.
@@ -25,8 +26,18 @@ func _process(delta):
 
 
 func _on_Timer_timeout():
-	# $AudioStreamPlayer/Multisampler.play_note("D")
-	pass
+	var calculator: NoteValueCalculator = get_node("/root/NoteValue")
+	
+	if current_midi_note.x != old_midi_note.x :
+		old_midi_note.x = current_midi_note.x
+		var name = calculator.get_note_name(current_midi_note.x )
+		var octave = calculator.get_note_octave(current_midi_note.x )
+		$AudioStreamPlayer/Multisampler.play_note(name,octave)
+	if current_midi_note.y != old_midi_note.y :	
+		old_midi_note.y = current_midi_note.y
+		var name = calculator.get_note_name(current_midi_note.y )
+		var octave = calculator.get_note_octave(current_midi_note.y)
+		$AudioStreamPlayer/Multisampler.play_note(name,octave)
 
 func FilterCurrentNote(note,scale):
 	var noteInOctave = note % 12;
@@ -40,8 +51,8 @@ func BuildPentaScale():
 	pass
 	
 func HandleMouseMove():
-	var stepY = floor(get_viewport().get_visible_rect().size.x / full_scale_penta.size())
-	var stepX = floor(get_viewport().get_visible_rect().size.y / full_scale_penta.size())
+	var stepX = floor(get_viewport().get_visible_rect().size.x / full_scale_penta.size())
+	var stepY = floor(get_viewport().get_visible_rect().size.y / full_scale_penta.size())
 	var  oldCase = Vector2(floor(old_position.x / stepX),floor(old_position.y / stepY))
 	var  newCase = Vector2(floor($Character.get_position().x / stepX),floor($Character.get_position().y / stepY))
 

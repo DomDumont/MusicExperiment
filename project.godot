@@ -46,6 +46,11 @@ config/icon="res://icon.png"
 
 NoteValue="*res://addons/SimpleSampler/note_value.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/SimpleSampler/plugin.cfg" )

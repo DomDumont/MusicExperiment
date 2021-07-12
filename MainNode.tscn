@@ -265,4 +265,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="LabelMIDINote2" type="Label" parent="."]
+margin_left = 737.47
+margin_top = 553.677
+margin_right = 1004.47
+margin_bottom = 584.677
+text = "Idea by Sylvain Brunet, Code by DomDom
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
