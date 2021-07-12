@@ -232,4 +232,37 @@ autostart = true
 [node name="Character" parent="." instance=ExtResource( 20 )]
 position = Vector2( 503, 265 )
 
+[node name="LabelPosition" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 31.0
+margin_right = 59.0
+margin_bottom = 62.0
+text = "COUCOU
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelWindowSize" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 69.0
+margin_right = 58.0
+margin_bottom = 100.0
+text = "COUCOU
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelMIDINote" type="Label" parent="."]
+margin_left = 12.0
+margin_top = 104.0
+margin_right = 70.0
+margin_bottom = 135.0
+text = "COUCOU
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
