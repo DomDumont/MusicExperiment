@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/C7.mp3-feb7f42d675ad7f5a56f6a9e4ada9713.mp3str"
+
+[deps]
+
+source_file="res://piano/C7.mp3"
+dest_files=[ "res://.import/C7.mp3-feb7f42d675ad7f5a56f6a9e4ada9713.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

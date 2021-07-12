@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ds1.mp3-5ef73341934024335c88ffa233b74e83.mp3str"
+
+[deps]
+
+source_file="res://piano/Ds1.mp3"
+dest_files=[ "res://.import/Ds1.mp3-5ef73341934024335c88ffa233b74e83.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

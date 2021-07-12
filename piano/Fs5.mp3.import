@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Fs5.mp3-a4b4b8cea3994b6498c99422a4f5b835.mp3str"
+
+[deps]
+
+source_file="res://piano/Fs5.mp3"
+dest_files=[ "res://.import/Fs5.mp3-a4b4b8cea3994b6498c99422a4f5b835.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

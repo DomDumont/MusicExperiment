@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Fs2.mp3-42aa5950aac90b68d3406744053870f1.mp3str"
+
+[deps]
+
+source_file="res://piano/Fs2.mp3"
+dest_files=[ "res://.import/Fs2.mp3-42aa5950aac90b68d3406744053870f1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

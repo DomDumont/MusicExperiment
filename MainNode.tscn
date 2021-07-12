@@ -1,0 +1,235 @@
+[gd_scene load_steps=65 format=2]
+
+[ext_resource path="res://MainNode.gd" type="Script" id=1]
+[ext_resource path="res://addons/SimpleSampler/multisampler.gd" type="Script" id=2]
+[ext_resource path="res://piano/A5.mp3" type="AudioStream" id=3]
+[ext_resource path="res://piano/A4.mp3" type="AudioStream" id=4]
+[ext_resource path="res://piano/A6.mp3" type="AudioStream" id=5]
+[ext_resource path="res://piano/A3.mp3" type="AudioStream" id=6]
+[ext_resource path="res://piano/A2.mp3" type="AudioStream" id=7]
+[ext_resource path="res://piano/A0.mp3" type="AudioStream" id=8]
+[ext_resource path="res://piano/A7.mp3" type="AudioStream" id=9]
+[ext_resource path="res://piano/A1.mp3" type="AudioStream" id=10]
+[ext_resource path="res://addons/SimpleSampler/sample_resource.gd" type="Script" id=11]
+[ext_resource path="res://piano/C7.mp3" type="AudioStream" id=12]
+[ext_resource path="res://piano/C8.mp3" type="AudioStream" id=13]
+[ext_resource path="res://piano/C2.mp3" type="AudioStream" id=14]
+[ext_resource path="res://piano/C3.mp3" type="AudioStream" id=15]
+[ext_resource path="res://piano/C4.mp3" type="AudioStream" id=16]
+[ext_resource path="res://piano/C5.mp3" type="AudioStream" id=17]
+[ext_resource path="res://piano/C6.mp3" type="AudioStream" id=18]
+[ext_resource path="res://piano/C1.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Character.tscn" type="PackedScene" id=20]
+[ext_resource path="res://piano/Ds2.mp3" type="AudioStream" id=21]
+[ext_resource path="res://piano/Ds3.mp3" type="AudioStream" id=22]
+[ext_resource path="res://piano/Ds5.mp3" type="AudioStream" id=23]
+[ext_resource path="res://piano/Ds1.mp3" type="AudioStream" id=24]
+[ext_resource path="res://piano/Fs3.mp3" type="AudioStream" id=25]
+[ext_resource path="res://piano/Fs7.mp3" type="AudioStream" id=26]
+[ext_resource path="res://piano/Fs2.mp3" type="AudioStream" id=27]
+[ext_resource path="res://piano/Fs1.mp3" type="AudioStream" id=28]
+[ext_resource path="res://piano/Ds6.mp3" type="AudioStream" id=29]
+[ext_resource path="res://piano/Fs6.mp3" type="AudioStream" id=30]
+[ext_resource path="res://piano/Ds4.mp3" type="AudioStream" id=31]
+[ext_resource path="res://piano/Ds7.mp3" type="AudioStream" id=32]
+[ext_resource path="res://piano/Fs5.mp3" type="AudioStream" id=33]
+[ext_resource path="res://piano/Fs4.mp3" type="AudioStream" id=34]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 11 )
+stream = ExtResource( 8 )
+tone = "A"
+octave = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 11 )
+stream = ExtResource( 10 )
+tone = "A"
+octave = 1
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 11 )
+stream = ExtResource( 7 )
+tone = "A"
+octave = 2
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 11 )
+stream = ExtResource( 6 )
+tone = "A"
+octave = 3
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 11 )
+stream = ExtResource( 4 )
+tone = "A"
+octave = 4
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 11 )
+stream = ExtResource( 3 )
+tone = "A"
+octave = 5
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 11 )
+stream = ExtResource( 5 )
+tone = "A"
+octave = 6
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 11 )
+stream = ExtResource( 9 )
+tone = "A"
+octave = 7
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 11 )
+stream = ExtResource( 19 )
+tone = "C"
+octave = 1
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 11 )
+stream = ExtResource( 14 )
+tone = "C"
+octave = 2
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 11 )
+stream = ExtResource( 15 )
+tone = "C"
+octave = 3
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 11 )
+stream = ExtResource( 16 )
+tone = "C"
+octave = 4
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 11 )
+stream = ExtResource( 17 )
+tone = "C"
+octave = 5
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 11 )
+stream = ExtResource( 18 )
+tone = "C"
+octave = 6
+
+[sub_resource type="Resource" id=15]
+script = ExtResource( 11 )
+stream = ExtResource( 12 )
+tone = "C"
+octave = 7
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 11 )
+stream = ExtResource( 13 )
+tone = "C"
+octave = 8
+
+[sub_resource type="Resource" id=17]
+script = ExtResource( 11 )
+stream = ExtResource( 24 )
+tone = "D#"
+octave = 1
+
+[sub_resource type="Resource" id=18]
+script = ExtResource( 11 )
+stream = ExtResource( 21 )
+tone = "D#"
+octave = 2
+
+[sub_resource type="Resource" id=19]
+script = ExtResource( 11 )
+stream = ExtResource( 22 )
+tone = "D#"
+octave = 3
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 11 )
+stream = ExtResource( 31 )
+tone = "D#"
+octave = 4
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 11 )
+stream = ExtResource( 23 )
+tone = "D#"
+octave = 5
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 11 )
+stream = ExtResource( 29 )
+tone = "D#"
+octave = 6
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 11 )
+stream = ExtResource( 32 )
+tone = "D#"
+octave = 7
+
+[sub_resource type="Resource" id=24]
+script = ExtResource( 11 )
+stream = ExtResource( 28 )
+tone = "F#"
+octave = 1
+
+[sub_resource type="Resource" id=25]
+script = ExtResource( 11 )
+stream = ExtResource( 27 )
+tone = "F#"
+octave = 2
+
+[sub_resource type="Resource" id=26]
+script = ExtResource( 11 )
+stream = ExtResource( 25 )
+tone = "F#"
+octave = 3
+
+[sub_resource type="Resource" id=27]
+script = ExtResource( 11 )
+stream = ExtResource( 34 )
+tone = "F#"
+octave = 4
+
+[sub_resource type="Resource" id=28]
+script = ExtResource( 11 )
+stream = ExtResource( 33 )
+tone = "F#"
+octave = 5
+
+[sub_resource type="Resource" id=29]
+script = ExtResource( 11 )
+stream = ExtResource( 30 )
+tone = "F#"
+octave = 6
+
+[sub_resource type="Resource" id=30]
+script = ExtResource( 11 )
+stream = ExtResource( 26 )
+tone = "F#"
+octave = 7
+
+[node name="MainNode" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="Multisampler" type="AudioStreamPlayer" parent="AudioStreamPlayer"]
+script = ExtResource( 2 )
+samples = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ]
+max_notes = 8
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
+autostart = true
+
+[node name="Character" parent="." instance=ExtResource( 20 )]
+position = Vector2( 503, 265 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
