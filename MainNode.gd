@@ -29,17 +29,15 @@ func _on_Timer_timeout():
 	var calculator: NoteValueCalculator = get_node("/root/NoteValue")
 	
 	if current_midi_note.x != old_midi_note.x :
-		print("note x now"+ str(current_midi_note.x))
 		old_midi_note.x = current_midi_note.x
 		var name = calculator.get_note_name(current_midi_note.x )
 		var octave = calculator.get_note_octave(current_midi_note.x )
-		#$AudioStreamPlayer/Multisampler.play_note(name,octave)
+		$AudioStreamPlayer/Multisampler.play_note(name,octave)
 	if current_midi_note.y != old_midi_note.y :	
-		print("note y now"+ str(current_midi_note.y))
 		old_midi_note.y = current_midi_note.y
 		var name = calculator.get_note_name(current_midi_note.y )
 		var octave = calculator.get_note_octave(current_midi_note.y)
-		#$AudioStreamPlayer/Multisampler.play_note(name,octave)
+		$AudioStreamPlayer/Multisampler.play_note(name,octave)
 
 func FilterCurrentNote(note,scale):
 	var noteInOctave = note % 12;
