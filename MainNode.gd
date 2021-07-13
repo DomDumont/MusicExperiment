@@ -46,7 +46,7 @@ func FilterCurrentNote(note,scale):
 func BuildPentaScale():
 	for i in range(36,120):
 		if FilterCurrentNote(i,scale_penta):
-			print(i)
+			# print(i)
 			full_scale_penta.append(i)
 	pass
 	

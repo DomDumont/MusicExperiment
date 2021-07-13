@@ -226,7 +226,7 @@ samples = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4
 max_notes = 8
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.4
+wait_time = 0.2
 autostart = true
 
 [node name="Character" parent="." instance=ExtResource( 20 )]
