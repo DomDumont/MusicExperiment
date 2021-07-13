@@ -48,7 +48,7 @@ NoteValue="*res://addons/SimpleSampler/note_value.gd"
 
 [display]
 
-window/stretch/mode="viewport"
+window/size/resizable=false
 window/stretch/aspect="keep"
 
 [editor_plugins]
