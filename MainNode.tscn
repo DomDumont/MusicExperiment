@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://MainNode.gd" type="Script" id=1]
 [ext_resource path="res://addons/SimpleSampler/multisampler.gd" type="Script" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://piano/Ds7.mp3" type="AudioStream" id=32]
 [ext_resource path="res://piano/Fs5.mp3" type="AudioStream" id=33]
 [ext_resource path="res://piano/Fs4.mp3" type="AudioStream" id=34]
+[ext_resource path="res://MainFont.tres" type="DynamicFont" id=35]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 11 )
@@ -233,34 +234,34 @@ autostart = true
 position = Vector2( 503, 265 )
 
 [node name="LabelPosition" type="Label" parent="."]
-margin_left = 10.0
-margin_top = 31.0
-margin_right = 59.0
-margin_bottom = 62.0
-text = "COUCOU
-"
+margin_left = 19.0
+margin_top = 23.0
+margin_right = 164.0
+margin_bottom = 45.0
+custom_fonts/font = ExtResource( 35 )
+text = "COUCOU"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="LabelWindowSize" type="Label" parent="."]
-margin_left = 10.0
-margin_top = 69.0
-margin_right = 58.0
-margin_bottom = 100.0
-text = "COUCOU
-"
+margin_left = 20.0
+margin_top = 62.0
+margin_right = 132.0
+margin_bottom = 94.0
+custom_fonts/font = ExtResource( 35 )
+text = "COUCOU"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="LabelMIDINote" type="Label" parent="."]
-margin_left = 12.0
-margin_top = 104.0
-margin_right = 70.0
-margin_bottom = 135.0
-text = "COUCOU
-"
+margin_left = 19.0
+margin_top = 99.0
+margin_right = 131.0
+margin_bottom = 131.0
+custom_fonts/font = ExtResource( 35 )
+text = "COUCOU"
 __meta__ = {
 "_edit_use_anchors_": false
 }

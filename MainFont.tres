@@ -1,0 +1,7 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[sub_resource type="DynamicFontData" id=31]
+font_path = "res://Graphics/Kodchasan-LightItalic.ttf"
+
+[resource]
+font_data = SubResource( 31 )
